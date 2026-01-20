@@ -30,7 +30,9 @@ iris.head()
 
 # %%
 # What mental models can we see from these data sets?
+#We can see that there are 3 species of iris flowers represented in the data set. 
 # What data science questions can we ask?
+# We can ask if we can classify the species of iris based on the data that's given.
 
 # %%
 """
@@ -67,6 +69,9 @@ Patterns in data
 """
 # Look at the following tables: do you see any patterns? How could a
 # classification model point these out?
+#I can see that the four features all have different means based on the species
+#of iris flower. A classification model can use these different means to classify 
+#what species a data point belongs to by seeing which cluster it falls in. 
 patterns = iris.groupby(['Species'])
 patterns['Sepal.Length'].describe()
 
@@ -94,6 +99,7 @@ Mild disclaimer
 # For now, ask yourself:
 
 # 1. What is the purpose of data splitting?
+#
 # 2. What can we learn from data testing/validation?
 # 3. How do we know if a model is working?
 # 4. How could we find the model error?

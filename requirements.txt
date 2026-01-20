@@ -1,3 +1,5 @@
 pydataset
 scikit-learn
 plotly
+nbformat
+ipython
